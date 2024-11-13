@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>Oportunidades</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oportunidades</title>
+  <link rel="stylesheet" href="styles-oportunidades.css">
 </head>
 <body>
-    <header>
-        <!-- Navegação -->
-    </header>
-    <main>
-        <!-- Cartões de oportunidades -->
-    </main>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">ONGs</a></li>
+        <li><a href="#">Oportunidades</a></li>
+      </ul>
+      <input type="text" placeholder="Encontre oportunidades">
+      <button class="user-icon">👤</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button>Próximos de mim</button>
+      <button>Causas</button>
+      <button>Habilidades</button>
+      <button>Disponibilidade</button>
+      <button>Vagas online</button>
+    </div>
+        <div class="cards-container" id="cards-container"></div>
+  </main>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
