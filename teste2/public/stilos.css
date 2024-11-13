@@ -198,49 +198,56 @@ nav ul li.btn span.show:before {
 }
 
 /*slider*/
+/* Zera a margem e o padding de todos os elementos */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Define o estilo do container do slider */
 .slider {
   display: block;
-  height: 293px;
-  width: 600px;
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
+  height: 200px; /* altura do slider */
+  width: 100%; /* largura do slider */
+  margin:0%; /* centraliza horizontalmente */
+  margin-top: 0px; /* espaço acima do slider */
+  position: relative; /* permite posicionamento absoluto dos itens dentro do slider */
 }
 
+/* Estilo de cada item (li) dentro do slider */
 .slider li {
-  list-style: none;
-  position: absolute;
+  list-style: none; /* remove o marcador padrão da lista */
+  position: absolute; /* permite sobreposição dos itens */
 }
 
+/* Estilo das imagens do slider */
 .slider img {
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  vertical-align: top;
-  opacity: 0;
-  visibility: hidden;
+  margin:0%;
+  height: 100%; /* imagem ocupa toda a altura do slider */
+  width: 100%; /* imagem ocupa toda a largura do slider */
+  vertical-align: top; /* alinha a imagem ao topo */
+  opacity: 0; /* deixa as imagens invisíveis inicialmente */
+  visibility: hidden; /* oculta as imagens da tela */
 }
 
+/* Oculta os inputs do tipo checkbox */
 .slider input {
   display: none;
 }
 
+/* Estilo dos controles (label) do slider */
 .slider label {
-  background-color: #ffffff;
-  bottom: 10px;
-  cursor: pointer;
+  background-color: #ffffff; /* cor do controle do slider */
+  bottom: 10px; /* posiciona o controle próximo à base do slider */
+  cursor: pointer; /* exibe o cursor de clique */
   display: block;
-  height: 10px;
-  position: absolute;
-  width: 10px;
-  z-index: 10;
+  height: 10px; /* altura dos controles */
+  position: absolute; /* permite posicionamento exato */
+  width: 10px; /* largura dos controles */
+  z-index: 10; /* garante que os controles fiquem acima das imagens */
 }
 
+/* Define a posição dos controles do slider */
 .slider li:nth-child(1) label {
   left: 10px;
 }
@@ -253,8 +260,9 @@ nav ul li.btn span.show:before {
   left: 70px;
 }
 
+/* Exibe a imagem correspondente ao input que estiver marcado */
 .slider li input:checked ~ img {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
+  opacity: 1; /* torna a imagem visível */
+  visibility: visible; /* torna a imagem visível na tela */
+  z-index: 10; /* coloca a imagem selecionada acima das outras */
 }
