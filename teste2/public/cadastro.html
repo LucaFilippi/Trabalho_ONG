@@ -18,8 +18,11 @@
         <form>
             <!-- Campos de formulário -->
             <input type="text" value="" id="name" placeholder="Nome completo">
+            <span>username</span>
             <input type="email" value="" id="email" placeholder="Email">
+            <span>email</span>
             <input type="text" value="" id="phone" placeholder="Telefone">
+            <span>PhoneNumber</span>
             <textarea id="hability" placeholder="Habilidades"></textarea>
             <!-- Interesses -->
             <div class="grid">
@@ -54,7 +57,7 @@
 
     document.getElementById("submit").addEventListener('click', function (e) {
         e.preventDefault();
-        set(ref(db, 'user/' + document.getElementById("username").value),
+        set(ref(db, 'user/' + document.getElementById("name").value),
             {
 
                 username: document.getElementById("name").value,
