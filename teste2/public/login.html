@@ -2,26 +2,33 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="stilos.css">
 </head>
 <body>
     <div class="container">
-        <h1>ENTRE</h1>
-        <form>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Senha" required>
-            <a href="#">Esqueceu sua senha? Clique aqui</a>
-            <button type="submit">Entrar</button>
-        </form>
-        <div class="social-login">
-            <p>Continue com</p>
-            <button>Google</button>
-            <button>Apple</button>
-            <button>Facebook</button>
+        <div class="login-box">
+            <div class="login-form">
+                <h2>ENTRE</h2>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+            <div class="divider"></div>
+            <div class="alternative-login">
+                <p>Continue com</p>
+                <div class="social-icons">
+                    <img src="google_logo.png" alt="Google">
+                    <img src="apple_logo.png" alt="Apple">
+                </div>
+                <p>OU</p>
+                <button class="guest-button">Continue como convidado</button>
+                <p class="sign-up">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
         </div>
-        <button>Continue como convidado</button>
-        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
     </div>
 </body>
 </html>
