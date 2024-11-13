@@ -1,5 +1,4 @@
 
-
 function login() {
     firebase.auth().signInWithEmailAndPassword(
         form.text().value, form.email().value, form.tel().value
