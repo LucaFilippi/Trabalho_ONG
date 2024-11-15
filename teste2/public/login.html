@@ -12,9 +12,13 @@
             <div class="login-form">
                 <h2>ENTRE</h2>
                 <form>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                    <button type="submit">Entrar</button>
+                    <div class="inputbox">
+                        <input type="email" value="" id="email" required placeholder="Email">
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" value="" id="password" required placeholder="Senha">
+                    </div>
+                    <input type="submit" value="Entrar" class="sub" id="submit">
                 </form>
             </div>
             <div class="divider"></div>
@@ -26,10 +30,64 @@
                 </div>
                 <p>OU</p>
                 <button class="guest-button">Continue como convidado</button>
-                <p class="sign-up">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                <p class="sign-up">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </div>
         </div>
     </div>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDjtiCAE_-0Um8X2bexWNkZaJ1jc9Fh7Ho",
+        authDomain: "ongs-1183f.firebaseapp.com",
+        projectId: "ongs-1183f",
+        storageBucket: "ongs-1183f.firebasestorage.app",
+        messagingSenderId: "313989285129",
+        appId: "1:313989285129:web:9ab16fb812773951d77fd8",
+        measurementId: "G-XT4TM2F181"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const dbRef = ref(db);
+
+        get(child(dbRef, "user")).then((snapshot) => {
+            if (snapshot.exists()) {
+                let found = false;
+
+                snapshot.forEach(userSnapshot => {
+                    const user = userSnapshot.val();
+                    if (user.email === email) {
+                        found = true;
+
+                        if (user.password && user.password === password) {
+                            alert("Login realizado com sucesso!");
+                            window.location.href = "index.html"; 
+                        } else {
+                            alert("Senha incorreta.");
+                        }
+                    }
+                });
+
+                if (!found) {
+                    alert("Usuário não encontrado.");
+                }
+            } else {
+                alert("Nenhum cadastro encontrado.");
+            }
+        }).catch((error) => {
+            alert("Erro ao buscar no banco de dados: " + error.message);
+        });
+    });
+</script> 
 </html>
 
