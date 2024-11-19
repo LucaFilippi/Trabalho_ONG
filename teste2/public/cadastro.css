@@ -1,0 +1,123 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui margens e preenchimentos no cálculo de tamanho dos elementos */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  }
+
+body {
+    /* Define a fonte padrão e a cor de fundo */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    background-color: #9BCDF6; /* Azul claro de fundo */
+    margin: 0;
+    padding: 0;
+    /* Centraliza o formulário no meio da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da janela */
+}
+
+.container {
+    /* Cria um fundo branco com bordas arredondadas */
+    background: white;
+    border-radius: 20px;
+    padding: 40px; /* Espaçamento interno */
+    width: 900px; /* Largura fixa */
+    /* Adiciona uma sombra ao redor do contêiner */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Limita a largura em telas menores */
+}
+
+/* Estilo do título */
+h1 {
+    /* Centraliza o texto e define a cor */
+    font-size: 30px;
+    color: #005295; /* Define uma cor azul para o título */
+    margin-bottom: 70px; /* Espaçamento inferior */
+    text-align: center;
+    font-weight:bolder;
+    margin-bottom: 40px;
+}
+
+/* Aba de seleção (Voluntário, Empresa, ONGs) */
+.tabs {
+    display: flex; /* Organiza os botões lado a lado */
+    justify-content: space-between; /* Espaça os botões uniformemente */
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    /* Fundo e borda dos botões */
+    background: #9BCDF6; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    cursor: pointer; /* Mostra o cursor de "mão" */
+    flex: 1; /* Faz com que os botões tenham o mesmo tamanho */
+    margin: 0 5px; /* Espaçamento horizontal entre os botões */
+    font-weight: bold;
+    /* Transição para suavizar o efeito hover */
+    transition: all 0.3s ease;
+}
+
+.tabs button:hover,
+.tabs button:focus {
+    /* Estilo do botão ao passar o mouse ou ganhar foco */
+    background: #005295; /* Azul escuro */
+    color: white; /* Texto branco */
+    border: none;
+}
+
+/* Campos de entrada (input e textarea) */
+.inputbox {
+    display: flex; /* Coloca elementos em coluna */
+    flex-direction: column;
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+.inputbox input,
+.inputbox textarea {
+    /* Define a aparência padrão dos campos */
+    border: 1px solid #ccc; /* Cinza claro */
+    border-radius: 8px; /* Borda arredondada */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    box-sizing: border-box; /* Garante que padding não altere o tamanho */
+}
+
+.inputbox textarea {
+    /* Define altura fixa para o textarea */
+    resize: none; /* Desabilita redimensionamento */
+    height: 60px;
+}
+
+.inputbox input:focus,
+.inputbox textarea:focus {
+    /* Estilo ao focar nos campos */
+    border-color: #005295; /* Azul forte */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Botão "Finalizar" */
+.sub {
+    /* Estilo principal do botão */
+    background: #005295; /* Azul forte */
+    color: white; /* Texto branco */
+    border: none; /* Remove borda */
+    border-radius: 8px; /* Borda arredondada */
+    padding: 10px 0; /* Altura fixa */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Mostra o cursor de "mão" */
+    /* Transição para suavizar o efeito hover */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.sub:hover {
+    /* Estilo do botão ao passar o mouse */
+    background: #005295; /* Azul ainda mais escuro */
+}

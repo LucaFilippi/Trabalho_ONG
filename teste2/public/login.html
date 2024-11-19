@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="stilos.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,7 @@
                     <div class="inputbox">
                         <input type="password" value="" id="password" required placeholder="Senha">
                     </div>
-                    <input type="submit" value="Entrar" class="sub" id="submit">
+                    <button class="login-button">Entrar</button>
                 </form>
             </div>
             <div class="divider"></div>
@@ -71,7 +71,7 @@
 
                         if (user.password && user.password === password) {
                             alert("Login realizado com sucesso!");
-                            window.location.href = "index.html"; 
+                            window.location.href = "main.html"; 
                         } else {
                             alert("Senha incorreta.");
                         }

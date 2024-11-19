@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 
 <body>
     <div class="container">
         <h1>CADASTRO</h1>
         <div class="tabs">
-            <button>Voluntário</button>
-            <button>Empresa</button>
+            <button>VOLUNTÁRIO</button>
             <button>ONGs</button>
         </div>
         <form>
@@ -21,7 +20,7 @@
             </div>
             <div class="inputbox">
                 <input type="email" value="" id="email" required placeholder="Email">
-            </div>
+            </div> 
             <div class="inputbox">
                 <input type="password" value="" id="password" required placeholder="Senha">
             </div>
@@ -67,7 +66,7 @@
         })
         .then(() => {
             alert("Cadastro realizado com sucesso!");
-            window.location.href = "index.html";
+            window.location.href = "main.html";
         })
         .catch((error) => {
             alert("Erro ao cadastrar: " + error.message);
