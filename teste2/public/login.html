@@ -72,6 +72,7 @@
                         if (user.password && user.password === password) {
                             alert("Login realizado com sucesso!");
                             window.location.href = "main.html"; 
+                            return;
                         } else {
                             alert("Senha incorreta.");
                         }
