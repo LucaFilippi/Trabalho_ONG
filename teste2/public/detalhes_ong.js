@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (ong) {
         detailsContainer.innerHTML = `
             <h1>${ong.name}</h1>
-            <p><strong>Descrição:</strong> ${ong.description}</p>
-            <p><strong>Contato:</strong> ${ong.phone}</p>
+            <p>${ong.description}</p>
+            <p>${ong.phone}</p>
         `;
     } else {
         detailsContainer.innerHTML = "<p>ONG não encontrada.</p>";
