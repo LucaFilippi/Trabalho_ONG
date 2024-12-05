@@ -1,0 +1,99 @@
+* {
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  color: #000000; /* Define a cor do texto como preta */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total dos elementos */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Define a fonte padrão */
+  background-color: #9BCDF6;
+}
+
+  
+  /* Estilo do título principal */
+  main h2 {
+    background-color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+    color: #005295;
+  }
+  
+  /* Estilo do formulário */
+  form {
+    background: #ffffff;
+    width: 70%; /* Não há limite máximo */
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px 40px; /* Espaçamento interno maior */
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Mais espaço entre os campos */
+  }
+  
+  /* Estilo dos rótulos (labels) */
+  form label {
+    background: #ffffff;
+    font-size: 16px; /* Tamanho maior */
+    font-weight: bold;
+    color: #555;
+  }
+  
+/* Campos de entrada */
+form input,
+form textarea {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+}
+  
+  /* Estilo ao focar nos campos */
+  form input:focus,
+  form textarea:focus {
+    background: #ffffff;
+    border-color: #005295;
+  }
+  
+  /* Estilo do botão */
+  form button {
+    background-color: #005295;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 18px; /* Tamanho maior */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  form button:hover {
+    background-color: #9BCDF6;
+    transform: scale(1.03);
+  }
+  
+  /* Estilo do textarea */
+  form textarea {
+
+    resize: none; /* Desabilita o redimensionamento do textarea */
+    height: 120px; /* Altura maior */
+  }
+
+  /* Link de voltar */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #005295;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .back-link:hover {
+    color: #003D66; /* Escurece o texto ao passar o mouse */
+  }
+  
+  

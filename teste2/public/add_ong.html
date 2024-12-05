@@ -4,28 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar ONG</title>
-    <link rel="stylesheet" href="styless_ongs.css">
+    <link rel="stylesheet" href="add_ongs.css">
 </head>
 <body>
-    <nav>
-        <ul>
-           <li class="logo">
-              <div>
-                 <img src="logo_ong.png" alt="Ícone de Pesquisa">
-               </div>
-           </li>
-           <li class="btn"><span class="fas fa-bars"></span></li>
-           <div class="items">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="Ongs.html">ONGs</a></li>
-            <li><a href="oportunidades.html">Oportunidades</a></li>
-           </div>
-        </ul>
-     </nav>
-
     <main>
-        <h2>Adicionar Nova ONG</h2>
         <form id="add-ong-form">
+            <h2>Adicionar Nova ONG</h2>
             <label for="ong-name">Nome:</label>
             <input type="text" id="ong-name" required>
             <label for="ong-description">Descrição:</label>
@@ -34,8 +18,9 @@
             <input type="text" id="ong-phone" required>
             <button type="submit">Salvar</button>
         </form>
+        <a href="ongs.html" class="back-link">Voltar para a página inicial</a>
     </main>
 
-    <script src="adicionar_ong.js"></script>
+    <script src="add_ong.js"></script>
 </body>
 </html>
