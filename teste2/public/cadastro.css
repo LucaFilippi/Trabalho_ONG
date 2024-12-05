@@ -41,36 +41,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* Aba de seleção (Voluntário, Empresa, ONGs) */
-.tabs {
-    display: flex; /* Organiza os botões lado a lado */
-    justify-content: space-between; /* Espaça os botões uniformemente */
-    margin-bottom: 20px;
-}
-
-.tabs button {
-    /* Fundo e borda dos botões */
-    background: #9BCDF6; /* Azul claro */
-    color: white;
-    border: none;
-    border-radius: 4px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno */
-    cursor: pointer; /* Mostra o cursor de "mão" */
-    flex: 1; /* Faz com que os botões tenham o mesmo tamanho */
-    margin: 0 5px; /* Espaçamento horizontal entre os botões */
-    font-weight: bold;
-    /* Transição para suavizar o efeito hover */
-    transition: all 0.3s ease;
-}
-
-.tabs button:hover,
-.tabs button:focus {
-    /* Estilo do botão ao passar o mouse ou ganhar foco */
-    background: #005295; /* Azul escuro */
-    color: white; /* Texto branco */
-    border: none;
-}
-
 /* Campos de entrada (input e textarea) */
 .inputbox {
     display: flex; /* Coloca elementos em coluna */

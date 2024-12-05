@@ -64,49 +64,6 @@ nav ul div.items a:hover {
   color: #9BCDF6; /* Altera a cor do texto ao passar o mouse */
 }
 
-/* Estilo da barra de pesquisa */
-nav ul .search-icon {
-  height: 40px; /* Altura da barra */
-  width: 850px; /* Largura total */
-  display: flex; /* Flexbox para alinhamento horizontal */
-  background: #e6e6e6; /* Cor de fundo da barra */
-  border-radius: 5px; /* Arredonda as bordas */
-}
-
-/* Estilo do campo de entrada de pesquisa */
-nav ul .search-icon input {
-  height: 100%; /* Ocupa toda a altura */
-  width: 800px; /* Largura do campo */
-  border: none; /* Remove bordas */
-  outline: none; /* Remove contorno ao focar */
-  padding: 0 10px; /* Espaçamento interno para o texto */
-  color: #000000; /* Cor do texto digitado */
-  font-size: 16px; /* Tamanho da fonte */
-  border-radius: 5px 0 0 5px; /* Arredonda o canto esquerdo */
-  background-color: #f3f3f3;
-}
-
-/* Estilo do ícone de pesquisa */
-nav ul .search-icon .icon {
-  height: 100%; /* Ocupa toda a altura */
-  width: 50px; /* Largura do botão de ícone */
-  line-height: 40px; /* Alinhamento vertical do ícone */
-  text-align: center; /* Alinha o ícone ao centro */
-  border-radius: 0 5px 5px 0; /* Arredonda o canto direito */
-  cursor: pointer; /* Mostra o ponteiro ao passar o mouse */
-}
-
-/* Cor de fundo ao passar o mouse no botão de pesquisa */
-nav ul .search-icon .icon:hover {
-  background: #cccccc; /* Cor de fundo do botão ao passar o mouse */
-}
-
-/* Cor do ícone de pesquisa */
-nav ul .search-icon .icon span {
-  color: #222222; /* Cor do ícone de pesquisa */
-  font-size: 18px; /* Tamanho do ícone */
-}
-
 /* Estilo do botão do menu (responsivo) */
 nav ul li.btn {
   font-size: 29px; /* Tamanho do botão */
