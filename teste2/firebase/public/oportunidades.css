@@ -120,7 +120,7 @@ nav ul li.btn span.show:before {
 
 /* Efeito ao passar o mouse no card */
 .card:hover {
-  transform: scale(1.05); /* Aumenta o tamanho levemente ao passar o mouse */
+  transform: scale(1.005); /* Aumenta o tamanho levemente ao passar o mouse */
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
 }
 

@@ -107,7 +107,19 @@
   }
   
   /* Estilos para o botão "Continue como convidado" */
-  .guest-button {
+  .guest-button a{
+    width: 100%;
+    padding: 10px;
+    background-color: #005295; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda os cantos */
+    font-size: 15px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 30px;
+  }
+  
+  .guest-button a{
     width: 100%;
     padding: 10px;
     background-color: #005295; /* Fundo azul */
