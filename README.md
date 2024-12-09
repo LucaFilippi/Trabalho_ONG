@@ -7,6 +7,7 @@ Cecília, Beatriz, Lorena e Luca
 O site "Oportunidades ONG" é um projeto desenvolvido em html, css e javascript, com o objetivo de conectar ONGs a pessoas interessadas em contribuir, seja por meio de trabalho voluntário ou ocupando vagas remuneradas. O site é dinâmico, intuitivo e focado em promover impacto social ao facilitar o acesso a informações sobre ONGs e suas oportunidades.
 
 Link: https://ongs-1183f.web.app
+Video: https://youtu.be/TzYW5bwNIAw
 
 Estrutura do Site
 
