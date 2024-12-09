@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidades</title>
+    <link rel="stylesheet" href="oportunidades.css">
+</head>
+<body>
+    <nav>
+        <ul>
+           <li class="logo">
+                <div>
+                 <img src="logo_ong.png">
+               </div>
+           </li>
+           
+           <li class="btn"><span class="fas fa-bars"></span></li>
+           <div class="items">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="ongs.html">ONGs</a></li>
+            <li><a href="oportunidades.html">Oportunidades</a></li>
+           </div>
+        </ul>
+     </nav>
+  <main>
+      <a href="add-card.html">
+        <button class="guest-button">Adicionar nova Oportunidade</button>
+      </a>
+        <div class="cards-container" id="cards-container">
+          <!-- Cards são gerados aqui -->
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h3>Título da Oportunidade</h3>
+              <p>Por: Nome da Organização</p>
+              <p>Descrição breve da oportunidade...</p>
+              <p><i class="location-icon">📍 Localização</i></p>
+              <p>Telefone: </p>
+            </div>
+          </div>
+        </div>
+        
+  </main>
+  <script src="oportunidades.js"></script>
+</body>
+</html>

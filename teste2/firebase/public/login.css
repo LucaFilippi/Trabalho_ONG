@@ -1,0 +1,145 @@
+
+/*login*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui margens e preenchimentos no cálculo de tamanho dos elementos */
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  }
+  
+  /* Estilos principais para o corpo da página */
+  body {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Faz com que o corpo ocupe 100% da altura da tela */
+    background-color:#9BCDF6; /* Define a cor de fundo */
+  }
+  
+  /* Estilos para o contêiner principal */
+  .container {
+    background-color:white; /* Define uma cor de fundo suave */
+    border-radius: 20px; /* Arredonda os cantos */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    display: flex;
+    padding: 40px;
+    width: 900px; /* Define uma largura fixa */
+    height: 550px;
+    max-width: 90%; /* Limita a largura em telas menores */
+  }
+  
+  /* Estilos para a caixa de login */
+  .login-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Espaça os elementos nas extremidades */
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+  }
+  
+  /* Estilos para o formulário de login */
+  .login-form {
+    padding: 50px;
+    flex: 1; /* Permite que o formulário ocupe metade da largura disponível */
+  }
+  
+  /* Estilo para o título do formulário */
+  .login-form h2 {
+    font-size: 30px;
+    color: #005295; /* Define uma cor azul para o título */
+    margin-bottom: 70px; /* Espaçamento inferior */
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  /* Estilos para os campos de entrada do formulário */
+  .login-form input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d0d6e0; /* Borda de cor cinza claro */
+    border-radius: 4px; /* Arredonda os cantos */
+  }
+  
+  
+  /* Estilos para o botão de login */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005295; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda os cantos */
+    font-size: 15px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 40px;
+  }
+  
+  /* Linha divisória entre o formulário de login e a seção de login alternativo */
+  .divider {
+    width: 1px;
+    background-color: #d0d6e0; /* Cor cinza claro */
+    margin: 0 20px;
+  }
+  
+  /* Estilos para a seção de login alternativo */
+  .alternative-login {
+    margin-top: 100px;
+    padding: 20px;
+    flex: 1; /* Permite que a seção ocupe metade da largura disponível */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilos para o texto na seção de login alternativo */
+  .alternative-login p {
+    color: #7f8da4; /* Cor cinza */
+    font-size: 14px;
+    margin: 10px;
+    /*margin-bottom: 30px;*/
+  }
+  
+  /* Estilos para os ícones das redes sociais */
+  .social-icons img {
+    height: 40px;
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para o botão "Continue como convidado" */
+  .guest-button a{
+    width: 100%;
+    padding: 10px;
+    background-color: #005295; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda os cantos */
+    font-size: 15px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 30px;
+  }
+  
+  .guest-button a{
+    width: 100%;
+    padding: 10px;
+    background-color: #005295; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Arredonda os cantos */
+    font-size: 15px;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 30px;
+  }
+  
+  /* Estilos para o texto "Não tem uma conta?" */
+  .sign-up {
+    font-size: 14px;
+    color: #7f8da4; /* Cor cinza */
+  }
+  
+  /* Estilos para o link "Cadastre-se" */
+  .sign-up a {
+    color: #005295; /* Cor azul para o link */
+    text-decoration: none; /* Remove o sublinhado do link */
+  }
+  

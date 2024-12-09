@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <form>
+            <div class="inputbox">
+                <input type="text" value="" id="username" required placeholder="Nome completo">
+            </div>
+            <div class="inputbox">
+                <input type="email" value="" id="email" required placeholder="Email">
+            </div> 
+            <div class="inputbox">
+                <input type="password" value="" id="password" required placeholder="Senha">
+            </div>
+            <div class="inputbox">
+                <input type="text" value="" id="phone" required placeholder="Número do celular">
+            </div>
+            <div class="inputbox">
+                <textarea value="" id="hability" required placeholder="Habilidades"></textarea>
+            </div>
+            <input type="submit" value="Finalizar" class="sub" id="submit">
+        </form>
+    </div>
+</body>
+<<<<<<< HEAD
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";  
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDjtiCAE_-0Um8X2bexWNkZaJ1jc9Fh7Ho",
+        authDomain: "ongs-1183f.firebaseapp.com",
+        projectId: "ongs-1183f",
+        storageBucket: "ongs-1183f.firebasestorage.app",
+        messagingSenderId: "313989285129",
+        appId: "1:313989285129:web:9ab16fb812773951d77fd8",
+        measurementId: "G-XT4TM2F181"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const db = getDatabase(app);
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+        e.preventDefault(); 
+        set(ref(db, 'user/' + document.getElementById("username").value), {
+            username: document.getElementById("username").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            PhoneNumber: document.getElementById("phone").value,
+            Habilidades: document.getElementById("hability").value
+        })
+        .then(() => {
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "main.html";
+        })
+        .catch((error) => {
+            alert("Erro ao cadastrar: " + error.message);
+        });
+    });
+</script>
+
+
+</html>
+=======
+<script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyDjtiCAE_-0Um8X2bexWNkZaJ1jc9Fh7Ho",
+    authDomain: "ongs-1183f.firebaseapp.com",
+    projectId: "ongs-1183f",
+    storageBucket: "ongs-1183f.firebasestorage.app",
+    messagingSenderId: "313989285129",
+    appId: "1:313989285129:web:9ab16fb812773951d77fd8",
+    measurementId: "G-XT4TM2F181"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+</html>
+>>>>>>> 641cae43e09002de405e5aa2f3eb83ce5c386569

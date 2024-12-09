@@ -1,0 +1,163 @@
+/* Reseta o estilo de todos os elementos e define o estilo base */
+* {
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  color: #000000; /* Define a cor do texto como preta */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total dos elementos */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo do corpo da página */
+body {
+  width: 100%; /* Define a largura como 100% da janela */
+  height: 100vh; /* Define a altura como 100% da altura da viewport */
+  background-color: #9BCDF6; /* Cor de fundo */
+  background-position: center; /* Centraliza a posição do background */
+  background-size: cover; /* Faz o background preencher a tela */
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background: #ffffff; /* Define a cor de fundo do menu */
+  padding: 10px 40px 10px 70px; /* Define o espaçamento interno */
+  border-left: none; /* Remove borda esquerda */
+  border-right: none; /* Remove borda direita */
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.4); /* Sombra para o efeito de profundidade */
+  border-radius: 20px; /* Arredonda as bordas do menu */
+}
+
+/* Define o estilo da lista de navegação */
+nav ul {
+  display: flex; /* Usa o Flexbox para alinhar itens */
+  list-style: none; /* Remove a lista com marcadores */
+  flex-wrap: wrap; /* Permite que itens ocupem várias linhas, se necessário */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha itens horizontalmente no centro */
+}
+
+/* Estilo do item logo */
+nav ul li.logo img{
+  height: 50px; /* Ajuste a altura da imagem */
+  width: auto; /* Proporções mantidas automaticamente */
+}
+
+/* Estilo dos itens do menu de navegação */
+nav ul div.items {
+  margin-right: 20px; /* Espaçamento à direita */
+  padding: 0 25px; /* Espaçamento interno em ambos os lados */
+  display: inline-flex; /* Mantém os itens em linha */
+}
+
+/* Estilo dos links de navegação */
+nav ul div.items a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: 600; /* Define peso da fonte */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 10px; /* Arredonda as bordas */
+  padding: 10px 15px; /* Espaçamento interno */
+  color: rgb(0, 0, 0); /* Cor do texto dos tópicos */
+  transition: all .2s; /* Suaviza a transição ao passar o mouse */
+}
+
+/* Cor dos links ao passar o mouse */
+nav ul div.items a:hover {
+  color: #9BCDF6; /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão do menu (responsivo) */
+nav ul li.btn {
+  font-size: 29px; /* Tamanho do botão */
+  flex: 1; /* Expande o item */
+  padding: 0 40px; /* Espaçamento interno */
+  display: none; /* Esconde o botão */
+}
+
+/* Estilo do botão para mostrar o menu */
+nav ul li.btn span {
+  height: 42px; /* Altura do botão */
+  width: 42px; /* Largura do botão */
+  text-align: center; /* Alinha o conteúdo do botão */
+  line-height: 42px; /* Alinhamento vertical */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em forma de mão */
+}
+
+/* Ícone de fechar quando o menu está ativo */
+nav ul li.btn span.show:before {
+  content: '\f00d'; /* Ícone do "X" (usado como exemplo) */
+}
+
+/*slider*/
+/* Remove margens e preenchimentos padrões de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos principais para o contêiner do slider */
+.slider {
+  display: block;
+  height: 650px; /* Altura fixa do slider */
+  width: 100%; /* Largura fixa do slider */
+  margin: auto; /* Centraliza o slider horizontalmente */
+  position: relative; /* Permite o posicionamento absoluto dos itens internos */
+}
+
+/* Estilos para cada item (slide) dentro do slider */
+.slider li {
+  list-style: none; /* Remove o estilo de lista */
+  position: absolute; /* Sobrepõe os itens uns sobre os outros */
+  width: 100%; /* Ocupa toda a largura do slider */
+  height: 100%; /* Ocupa toda a altura do slider */
+}
+
+/* Estilos para cada imagem no slider */
+.slider img {
+  margin: auto;
+  height: 100%; /* Ocupa toda a altura do contêiner do slider */
+  width: 100%; /* Ocupa toda a largura do contêiner do slider */
+}
+
+/* Esconde os inputs para que não apareçam na interface */
+.slider input {
+  display: none;
+}
+
+/* Estilos para os botões de navegação (setas) */
+.slider .prev, .slider .next {
+  position: absolute; /* Posicionamento absoluto para estar nas laterais do slider */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+  font-size: 40px; /* Tamanho das setas */
+  color: rgba(255, 255, 255, 0.7); /* Cor das setas */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  z-index: 10; /* Garante que as setas fiquem acima das imagens */
+}
+
+/* Remover o fundo e manter as setas limpas */
+.slider .prev, .slider .next {
+  background: none; /* Remove o fundo */
+  border: none; /* Remove qualquer borda */
+}
+
+/* Alinha a seta à esquerda */
+.slider .prev {
+  left: 10px; /* Alinha a seta à esquerda */
+}
+
+/* Alinha a seta à direita */
+.slider .next {
+  right: 10px; /* Alinha a seta à direita */
+}
+
+/* Efeito ao passar o mouse sobre as setas */
+.slider .prev:hover, .slider .next:hover {
+  color: #000000; /* Altera a cor da seta ao passar o mouse */
+}
+
+/* Mostra a imagem associada ao input selecionado */
+.slider li input:checked ~ img {
+  opacity: 1; /* Torna a imagem visível */
+  visibility: visible; /* Garante que a imagem apareça */
+  z-index: 10; /* Garante que a imagem fique acima das outras */
+}

@@ -1,0 +1,170 @@
+/* Reseta o estilo de todos os elementos e define o estilo base */
+* {
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  color: #000000; /* Define a cor do texto como preta */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total dos elementos */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo do corpo da página */
+body {
+  width: 100%; /* Define a largura como 100% da janela */
+  height: 100vh; /* Define a altura como 100% da altura da viewport */
+  background-color: #9BCDF6; /* Cor de fundo */
+  background-position: center; /* Centraliza a posição do background */
+  background-size: cover; /* Faz o background preencher a tela */
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background: #ffffff; /* Define a cor de fundo do menu */
+  padding: 10px 40px 10px 70px; /* Define o espaçamento interno */
+  border-left: none; /* Remove borda esquerda */
+  border-right: none; /* Remove borda direita */
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.4); /* Sombra para o efeito de profundidade */
+  border-radius: 20px; /* Arredonda as bordas do menu */
+}
+
+/* Define o estilo da lista de navegação */
+nav ul {
+  display: flex; /* Usa o Flexbox para alinhar itens */
+  list-style: none; /* Remove a lista com marcadores */
+  flex-wrap: wrap; /* Permite que itens ocupem várias linhas, se necessário */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha itens horizontalmente no centro */
+}
+
+/* Estilo do item logo */
+nav ul li.logo img{
+  height: 50px; /* Ajuste a altura da imagem */
+  width: auto; /* Proporções mantidas automaticamente */
+}
+
+/* Estilo dos itens do menu de navegação */
+nav ul div.items {
+  margin-right: 20px; /* Espaçamento à direita */
+  padding: 0 25px; /* Espaçamento interno em ambos os lados */
+  display: inline-flex; /* Mantém os itens em linha */
+}
+
+/* Estilo dos links de navegação */
+nav ul div.items a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: 600; /* Define peso da fonte */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 10px; /* Arredonda as bordas */
+  padding: 10px 15px; /* Espaçamento interno */
+  color: rgb(0, 0, 0); /* Cor do texto dos tópicos */
+  transition: all .2s; /* Suaviza a transição ao passar o mouse */
+}
+
+/* Cor dos links ao passar o mouse */
+nav ul div.items a:hover {
+  color: #9BCDF6; /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão do menu (responsivo) */
+nav ul li.btn {
+  font-size: 29px; /* Tamanho do botão */
+  flex: 1; /* Expande o item */
+  padding: 0 40px; /* Espaçamento interno */
+  display: none; /* Esconde o botão */
+}
+
+/* Estilo do botão para mostrar o menu */
+nav ul li.btn span {
+  height: 42px; /* Altura do botão */
+  width: 42px; /* Largura do botão */
+  text-align: center; /* Alinha o conteúdo do botão */
+  line-height: 42px; /* Alinhamento vertical */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em forma de mão */
+}
+
+/* Ícone de fechar quando o menu está ativo */
+nav ul li.btn span.show:before {
+  content: '\f00d'; /* Ícone do "X" (usado como exemplo) */
+}
+
+
+/* Reseta o estilo de todos os elementos e define o estilo base */
+* {
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  color: #000000; /* Define a cor do texto como preta */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total dos elementos */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Define a fonte padrão */
+}
+  
+/* Contêiner dos cards */
+.cards-container {
+  display: grid; /* Exibe os cards em um layout de grade */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Define as colunas responsivas */
+  gap: 20px; /* Espaço entre os cards */
+  padding: 20px; /* Espaçamento interno do contêiner */
+}
+
+/* Cada card (quadrado branco) */
+.card {
+  background-color: white; /* Fundo branco */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 8px; /* Borda arredondada */
+  overflow: hidden; /* Remove conteúdo que ultrapasse os limites do box */
+  cursor: pointer; /* Muda o cursor para indicar interatividade */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Suaviza transformações e sombras */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  padding: 15px; /* Espaçamento interno no card */
+  text-align: left; /* Alinha o texto no card à esquerda */
+}
+
+/* Efeito ao passar o mouse no card */
+.card:hover {
+  transform: scale(1.005); /* Aumenta o tamanho levemente ao passar o mouse */
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+/* Cabeçalho do card */
+.card-header {
+  height: 100px; /* Altura fixa para o cabeçalho */
+  background-color: #9BCDF6; /* Cor do cabeçalho */
+  border-bottom: 1px solid #ccc; /* Linha separadora */
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 15px; /* Espaçamento interno */
+}
+
+.card-body h3 {
+  font-size: 18px; /* Tamanho do título */
+  margin: 0 0 10px; /* Espaço inferior */
+}
+
+.card-body p {
+  font-size: 14px; /* Tamanho do texto */
+  margin: 5px 0; /* Espaçamento entre os parágrafos */
+}
+
+/* Ícone de localização */
+.card-body i.location-icon {
+  color: #005295; /* Azul para o ícone */
+}
+
+.guest-button {
+  width: 97%;
+  padding: 10px;
+  margin: 20px;
+  background-color: #005295; /* Fundo azul */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove a borda padrão */
+  border-radius: 4px; /* Arredonda os cantos */
+  font-size: 15px;
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Cor dos links ao passar o mouse */
+.guest-button:hover {
+  background-color: #ffffff; /* Altera a cor do texto ao passar o mouse */
+  color: #005295
+}

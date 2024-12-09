@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Novo Card</title>
+  <link rel="stylesheet" href="add-cards.css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Adicionar Novo Card</h1>
+    </header>
+    <form id="card-form">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" placeholder="Título do Card" required>
+
+      <label for="organization">Organização:</label>
+      <input type="text" id="organization" name="organization" placeholder="Nome da Organização" required>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" placeholder="Descrição da oportunidade" required></textarea>
+
+      <label for="location">Localização:</label>
+      <input type="text" id="location" name="location" placeholder="Bairro, Cidade, Estado" required>
+
+      <label for="phone">Telefone:</label>
+      <input type="text" id="phone" name="phone" placeholder="(19) 99999-9999" required>
+
+      <button type="submit">Adicionar Card</button>
+    </form>
+    <a href="oportunidades.html" class="back-link">Voltar para a página inicial</a>
+  </main>
+
+  <script src="add-card.js"></script>
+</body>
+</html>
